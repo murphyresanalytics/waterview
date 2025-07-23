@@ -1,0 +1,141 @@
+<style>
+  .waterview-process {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: sans-serif;
+    color: #333;
+  }
+
+  .waterview-process h2 {
+    color: #02537d;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+  }
+
+  .step {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    opacity: 0;
+    transform: translateX(-30px);
+    animation: slideIn 0.6s forwards;
+  }
+
+  .step:nth-child(even) {
+    animation-delay: 0.2s;
+  }
+  .step:nth-child(odd) {
+    animation-delay: 0.4s;
+  }
+
+  .step-number {
+    background-color: #02537d;
+    color: white;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-right: 20px;
+    flex-shrink: 0;
+  }
+
+  .step-text {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .tooltip {
+    position: relative;
+    cursor: help;
+    color: #02537d;
+    font-weight: bold;
+    border-bottom: 1px dashed #02537d;
+  }
+
+  .tooltip:hover::after {
+    content: "A land lease allows you to lease the land while owning the home built on it.";
+    position: absolute;
+    bottom: 120%;
+    left: 0;
+    background: #02537d;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    width: 240px;
+    font-size: 14px;
+    z-index: 10;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+
+  @keyframes slideIn {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .step {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .step-number {
+      margin-bottom: 10px;
+    }
+  }
+</style>
+
+<div class="waterview-process">
+  <h2>Process for Obtaining a Unit at Waterview</h2>
+
+  <div class="step">
+    <div class="step-number">1</div>
+    <div class="step-text">Contact Michelle or Amy</div>
+  </div>
+
+  <div class="step">
+    <div class="step-number">2</div>
+    <div class="step-text">Book an appointment for a tour or general information session</div>
+  </div>
+
+  <div class="step">
+    <div class="step-number">3</div>
+    <div class="step-text">Pick a unit or plot of land</div>
+  </div>
+
+  <div class="step">
+    <div class="step-number">4</div>
+    <div class="step-text">Sign a <span class="tooltip">Land Lease</span></div>
+  </div>
+
+  <div class="step">
+    <div class="step-number">5</div>
+    <div class="step-text">Pay a Security Deposit</div>
+  </div>
+
+  <div class="step">
+    <div class="step-number">6</div>
+    <div class="step-text">Begin picking out colors, designs, and other finishes</div>
+  </div>
+
+  <div class="step">
+    <div class="step-number">7</div>
+    <div class="step-text">Wait for construction to complete</div>
+  </div>
+
+  <div class="step">
+    <div class="step-number">8</div>
+    <div class="step-text">Pay first month’s rent</div>
+  </div>
+
+  <div class="step">
+    <div class="step-number">9</div>
+    <div class="step-text">Move in and pay rent monthly</div>
+  </div>
+</div>  
