@@ -1,93 +1,120 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Construction Timeline</title>
-<style>
-.timeline-box
-    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Construction Timeline</title>
+  <style>
     body {
-    font-family: sans-serif;
-    background: #f9f9f9;
-    margin: 0;
-    padding: 0;
+      margin: 0;
+      padding: 0;
+      font-family: 'Helvetica Neue', sans-serif;
     }
 
     .timeline-section {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 40px 20px;
+      position: relative;
+      background-color: #00537e; /* Base blue background */
+      padding: 100px 20px;
+      text-align: center;
+      overflow: hidden;
+      color: white;
+    }
+
+    .timeline-section::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center/cover;
+      opacity: 0.1;
+      z-index: 0;
+    }
+
+    .timeline-content {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+      z-index: 1;
     }
 
     .timeline-header {
-    text-align: center;
-    margin-bottom: 40px;
+      margin-bottom: 60px;
     }
 
     .timeline-header h2 {
-    font-size: 50px;
-    color: #02537d;
+      font-size: 50px;
+      color: whitesmoke;
+      margin: 0;
     }
 
     .timeline-box {
-    background: white;
-    border-left: 4px solid #02537d;
-    padding: 20px;
-    margin: 30px 0;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      background: white;
+      color: #02537d;
+      border-left: 4px solid #02537d;
+      padding: 20px;
+      margin: 30px 0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: left;
     }
 
     .timeline-date {
-    font-weight: bold;
-    color: #02537d;
-    margin-bottom: 10px;
+      font-weight: bold;
+      color: #02537d;
+      margin-bottom: 10px;
     }
-</style>
+
+    @media (max-width: 600px) {
+      .timeline-header h2 {
+        font-size: 36px;
+      }
+
+      .timeline-box {
+        padding: 16px;
+      }
+    }
+  </style>
 </head>
 <body>
-<div class="timeline-section">
-    <div class="timeline-header">
-    <h2><strong>Construction Timeline</h2>
-    </div>
+  <div class="timeline-section">
+    <div class="timeline-content">
+      <div class="timeline-header">
+        <h2><strong>Construction Timeline</strong></h2>
+      </div>
 
-    <div class="timeline-box">
-    <div class="timeline-date">August 2020</div>
-    John Murphy and Partner buy plot of land
-    </div>
+      <div class="timeline-box">
+        <div class="timeline-date">August 2020</div>
+        John Murphy and Partner buy plot of land
+      </div>
 
-    <div class="timeline-box">
-    <div class="timeline-date">January 2021</div>
-    Michelle Waldron begins the management for Waterview
-    </div>
+      <div class="timeline-box">
+        <div class="timeline-date">January 2021</div>
+        Michelle Waldron begins the management for Waterview
+      </div>
 
-    <div class="timeline-box">
-    <div class="timeline-date">March 2021</div>
-    Phase 1 begins and the first 10 units are built
-    </div>
+      <div class="timeline-box">
+        <div class="timeline-date">March 2021</div>
+        Phase 1 begins and the first 10 units are built
+      </div>
 
-    <div class="timeline-box">
-    <div class="timeline-date">July 2021</div>
-    Construction for next 20 units begin
-    </div>
+      <div class="timeline-box">
+        <div class="timeline-date">July 2021</div>
+        Construction for next 20 units begin
+      </div>
 
-    <div class="timeline-box">
-    <div class="timeline-date">December 2021</div>
-    The clubhouse begins its additions and 20 more units are built
-    </div>
+      <div class="timeline-box">
+        <div class="timeline-date">December 2021</div>
+        The clubhouse begins its additions and 20 more units are built
+      </div>
 
-    <div class="timeline-box">
-    <div class="timeline-date">January 2023</div>
-    100 Units are built and the clubhouse additions are completed
-    </div>
+      <div class="timeline-box">
+        <div class="timeline-date">January 2023</div>
+        100 Units are built and the clubhouse additions are completed
+      </div>
 
-    <div class="timeline-box">
-    <div class="timeline-date">July 2025</div>
-    116 Units built and all amenities nearly finished
+      <div class="timeline-box">
+        <div class="timeline-date">July 2025</div>
+        116 Units built and all amenities nearly finished
+      </div>
     </div>
-
-</div>
+  </div>
 </body>
 </html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Blue Background with Overlay</title>
+<style>
+    body {
+    margin: 0;
+    padding: 0;
+    }
+
+    .blue-background-section {
+    position: relative;
+      background-color: #00537e; /* Base blue */
+      height: 100vh; /* Full screen height */
+    overflow: hidden;
+    }
+
+    .blue-background-section::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center/cover;
+    opacity: 0.1;
+    z-index: 0;
+    }
+</style>
+</head>
+<body>
+<div class="blue-background-section"></div>
+</body>
+</html>
