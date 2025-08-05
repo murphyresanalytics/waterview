@@ -1,0 +1,71 @@
+<style>
+.hero-waterview {
+    background-color: #00537e;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    font-family: 'Helvetica Neue', sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-waterview::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center/cover;
+    opacity: 0.1;
+    z-index: 0;
+}
+
+.hero-waterview-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    animation: fadeIn 1.2s ease-in-out both;
+}
+
+.hero-waterview h1 {
+    font-size: 48px;
+    margin-bottom: 25px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.hero-waterview p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.hero-waterview a.cta-button {
+    background: white;
+    color: #00537e;
+    text-decoration: none;
+    padding: 14px 28px;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.hero-waterview a.cta-button:hover {
+    background: #e6e6e6;
+    transform: translateY(-2px);
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+</style>
+
+<div class="hero-waterview">
+<div class="hero-waterview-content">
+    <h1>Welcome to Waterview</h1>
+    <p>Waterview is a 120 Unit Gated community connected to Bay Point Resort. With direct lake and bay access, Waterview is the perfect place to vacation, rent, or own. Waterview is home to a community clubhouse, private pool and grill, fully stocked pond, fishing pad, and more.</p>
+    <p>Please visit our general info page to learn more!</p>
+    <a href="https://polygon-amphibian-7d6b.squarespace.com/about-us-1" class="cta-button">Learn More</a>
+</div>
+</div>

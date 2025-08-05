@@ -1,0 +1,230 @@
+<style>
+  .resource-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background: #f9f9f9;
+    font-family: sans-serif;
+  }
+
+  .resource-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .resource-header h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .resource-header p {
+    color: #666;
+    font-size: 16px;
+  }
+
+  .resource-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .resource-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 24px;
+    flex: 1 1 calc(33.333% - 30px); /* 3 per row */
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+    box-sizing: border-box;
+  }
+
+  .resource-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  }
+
+  .resource-icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto 20px auto;
+    fill: #888;
+    transition: fill 0.3s ease, transform 0.3s ease;
+  }
+
+  .resource-card:hover .resource-icon {
+    fill: #02537d;
+    transform: scale(1.1);
+  }
+
+  .resource-title {
+    font-size: 20px;
+    color: #222;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+
+  .resource-desc {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+
+  .resource-button {
+    display: inline-block;
+    background: #02537d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.3s ease;
+  }
+
+  .resource-button:hover {
+    background: #005bbd;
+  }
+
+  @media (max-width: 800px) {
+    .resource-card {
+      flex: 1 1 100%;
+    }
+  }
+</style>
+
+<div class="resource-section">
+  <div class="resource-header">
+    <h2>Helpful Owner Resources</h2>
+    <p>Access tools and services for owners and residents below.</p>
+  </div>
+
+  <div class="resource-grid">
+    <!-- Condo Cafe -->
+    <div class="resource-card">
+      <svg class="resource-icon" viewBox="0 0 20 20">
+        <path d="M4 4h12v2H4V4zm0 4h12v2H4V8zm0 4h8v2H4v-2z"/>
+      </svg>
+      <div class="resource-title">Condo Cafe</div>
+      <div class="resource-desc">Use for owner work orders, resident services, and more.</div>
+      <a href="https://bay-point-acquisitions-llc-rentcafewebsite.securecafe.com/residentservices/bay-point-acquisitions-llc/userlogin.aspx" class="resource-button" target="_blank">Go to Portal</a>
+    </div>
+
+    <!-- Street Sotheby's -->
+    <div class="resource-card">
+      <svg class="resource-icon" viewBox="0 0 20 20">
+        <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 11H9v-2h2v2zm0-4H9V5h2v4z"/>
+      </svg>
+      <div class="resource-title">Street Sotheby’s</div>
+      <div class="resource-desc">Explore listings and connect with Sotheby's realty.</div>
+      <a href="https://www.sothebysrealty.com/streetsir/eng" class="resource-button" target="_blank">Visit Site</a>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="resource-card">
+      <svg class="resource-icon" viewBox="0 0 20 20">
+        <path d="M4 4h12v2H4V4zm0 4h12v2H4V8zm0 4h8v2H4v-2z"/>
+      </svg>
+      <div class="resource-title">Resident Newsletter</div>
+      <div class="resource-desc">Check out the latest edition of our Resident Newsletter!</div>
+      <a href="https://murphyres-my.sharepoint.com/:w:/r/personal/john_murphyres_com/_layouts/15/Doc.aspx?sourcedoc=%7BC7CADF87-059A-495F-BBD4-A3E9E5D2EEDE%7D&file=Spring%20Update_%20%F0%9F%8F%A1%20Owner%20Update%20%20April_May%202025%20EditionII.docx&action=default&mobileredirect=true&DefaultItemOpen=1" class="resource-button" target="_blank">Go to Newsletter</a>
+    </div>
+  </div>
+</div>
+
+
+
+
+## Timeline
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Construction Timeline</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    .timeline-section {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .timeline-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .timeline-header h2 {
+      font-size: 50px;
+      color: #02537d;
+    }
+
+    .timeline-box {
+      background: white;
+      border-left: 4px solid #02537d;
+      padding: 20px;
+      margin: 30px 0;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .timeline-date {
+      font-weight: bold;
+      color: #02537d;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="timeline-section">
+    <div class="timeline-header">
+      <h2><strong>Construction Timeline</h2>
+    </div>
+
+    <div class="timeline-box">
+      <div class="timeline-date">August 2020</div>
+      John Murphy and Partner buy plot of land
+    </div>
+
+    <div class="timeline-box">
+      <div class="timeline-date">January 2021</div>
+      Michelle Waldron begins the management for Waterview
+    </div>
+
+    <div class="timeline-box">
+      <div class="timeline-date">March 2021</div>
+      Phase 1 begins and the first 10 units are built
+    </div>
+
+    <div class="timeline-box">
+      <div class="timeline-date">July 2021</div>
+      Construction for next 20 units begin
+    </div>
+
+    <div class="timeline-box">
+      <div class="timeline-date">December 2021</div>
+      The clubhouse begins its additions and 20 more units are built
+    </div>
+
+    <div class="timeline-box">
+      <div class="timeline-date">January 2023</div>
+      100 Units are built and the clubhouse additions are completed
+    </div>
+
+    <div class="timeline-box">
+      <div class="timeline-date">July 2025</div>
+      116 Units built and all amenities nearly finished
+    </div>
+
+  </div>
+</body>
+</html>
