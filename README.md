@@ -19,3 +19,5 @@
 ##### contact.html: This code is for the contact us page
 ##### generator-generic-ossf-slsa3-publish.yml: This workflow lets you generate SLSA provenance file for your project | DO NOT TOUCH!!!!!
 ##### homescrolling.html | This is the code for the 'Explore Waterview' section on the home page
+##### residentresources.html: This is the entire code for the 'Resident Information' page.
+##### images folder: Here is where all images 
