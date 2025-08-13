@@ -1,0 +1,173 @@
+<style>
+  .waterview-resident-section {
+    background-color: #003f63;
+    color: white;
+    font-family: 'Helvetica Neue', sans-serif;
+    padding: 80px 30px;
+    text-align: center;
+  }
+
+  .waterview-resident-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+
+  .waterview-resident-section p.section-subtitle {
+    font-size: 1rem;
+    color: #c6d6e6;
+    margin-bottom: 30px;
+  }
+
+  .search-box {
+    max-width: 400px;
+    margin: 0 auto 40px auto;
+  }
+
+  .search-box input {
+    width: 100%;
+    padding: 12px 18px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    background-color: #e6f0f8;
+    color: #003f63;
+    outline: none;
+  }
+
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  .info-card {
+    background-color: #004f7c;
+    border-radius: 16px;
+    padding: 30px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+
+  .info-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.15);
+  }
+
+  .info-card h3 {
+    margin: 0 0 10px;
+    font-size: 1.3rem;
+    color: #ffffff;
+  }
+
+  .info-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #e2effa;
+  }
+
+  .info-card a {
+    display: inline-block;
+    margin-top: 12px;
+    color: #ffe680;
+    font-weight: bold;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+  }
+
+  .info-card a:hover {
+    color: #fffacd;
+  }
+
+  .card-icon {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+  }
+
+  .info-card.hidden {
+    display: none;
+  }
+</style>
+
+<div class="waterview-resident-section">
+  <h2>Resident Resources</h2>
+  <p class="section-subtitle">Quick access to tools, documents, and platforms every Waterview resident should know.</p>
+
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search by keyword...">
+  </div>
+
+  <div class="info-grid" id="infoGrid">
+    <div class="info-card">
+      <div class="card-icon">🏢</div>
+      <h3>Condo Café</h3>
+      <p>Submit maintenance requests, upload documents, and manage your unit’s services. Always double-check your info before submitting.</p>
+      <a href="https://www.condocafe.com/" target="_blank">Go to Condo Café</a>
+    </div>
+
+    <div class="info-card">
+      <div class="card-icon">💼</div>
+      <h3>Sotheby’s Portal</h3>
+      <p>Handle payments, work orders, and communications if your unit is listed with Sotheby’s.</p>
+      <a href="https://www.sothebysrealty.com/eng/sales/marblehead-ma-usa" target="_blank">Access Sotheby’s</a>
+    </div>
+
+    <div class="info-card">
+      <div class="card-icon">🚗</div>
+      <h3>Parking Info</h3>
+      <p>Each unit includes two spaces. Guest passes are available from the Clubhouse Sales Office. Overflow parking is across Bayshore RD.</p>
+    </div>
+
+    <div class="info-card">
+      <div class="card-icon">📄</div>
+      <h3>Rental Newsletter</h3>
+      <p>Stay up to date on rules and regulations for unit rentals.</p>
+      <a href="https://example.com/rental-newsletter.pdf" target="_blank">View Newsletter</a>
+    </div>
+
+    <div class="info-card">
+      <div class="card-icon">📰</div>
+      <h3>Resident Newsletter</h3>
+      <p>Get the latest updates and news for the Waterview community.</p>
+      <a href="https://example.com/resident-newsletter.pdf" target="_blank">Read Now</a>
+    </div>
+
+    <div class="info-card">
+      <div class="card-icon">📘</div>
+      <h3>Owner’s Manual</h3>
+      <p>All community rules, policies, and unit responsibilities in one searchable document.</p>
+      <a href="https://example.com/owners-manual.pdf" target="_blank">Open Manual</a>
+    </div>
+
+    <div class="info-card">
+      <div class="card-icon">📞</div>
+      <h3>Contact Us</h3>
+      <p>For any questions or issues, reach out to the Waterview management team.</p>
+      <a href="mailto: https://example.com/contact" target="_blank">Email Us</a>
+      </div>
+
+    <div class="info-card">
+      <div class="card-icon">📄</div> 
+      <h3>Land Lease</h3>
+      <p>All residents must review and sign a 99 year land lease to confirm unit ownership and land rental.</p>
+      <a href="https://example.com/land-lease.pdf" target="_blank">View & Sign Land Lease</a>
+      </div>
+  </div>
+</div>
+
+<script>
+  document.getElementById('searchInput').addEventListener('input', function () {
+    const search = this.value.toLowerCase();
+    const cards = document.querySelectorAll('.info-card');
+
+    cards.forEach(card => {
+      const text = card.textContent.toLowerCase();
+      card.classList.toggle('hidden', !text.includes(search));
+    });
+  });
+</script>
